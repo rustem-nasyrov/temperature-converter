@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temperature converter</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="converter-body">
+      <div class="data-wrap data-wrap--input">
+        <div class="field-group">
+          <label class="radio-body">
+            <span class="radio__label" id="labelC">°C</span>
+            <input name="temp" type="radio" id="c" class="radio--none" checked>
+          </label>
+          <label class="radio-body">
+            <span class="radio__label" id="labelF">°F</span>
+            <input name="temp" type="radio" id="f" class="radio--none">
+          </label>
+          <input type="text" id="inputField" class="field field--input" placeholder="40 °C">
+        </div>
+      </div>
+      <div class="data-wrap data-wrap--output">
+        <div class="field-group">
+          <input type="text" id="outputField" class="field field--output" placeholder="104 °F" readonly>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/scripts.min.js"></script>
+</body>
+
+</html>
